@@ -153,6 +153,8 @@ Error message and password prompt
 
 <li>$:/GitHub/Username</li>
 
+<li>$:/Import</li>
+
 <li>$:/isEncrypted</li>
 
 <li>$:/SiteSubtitle</li>
@@ -9400,6 +9402,17 @@ Error message and password prompt
 <div created="20200205094809810" creator="Aria" modified="20200205094811258" modifier="Aria" title="$:/GitHub/Username">
 <pre>agheeraert</pre>
 </div>
+<div plugin-type="import" status="pending" title="$:/Import" type="application/json">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;Untitled&quot;: {
+            &quot;title&quot;: &quot;Untitled&quot;,
+            &quot;text&quot;: &quot;volume.&quot;,
+            &quot;type&quot;: &quot;text/plain&quot;
+        }
+    }
+}</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -9594,13 +9607,14 @@ Error message and password prompt
 <div created="20200205095845945" creator="Aria" modified="20200205100552566" modifier="Aria" tags="quantity" title="Neighborhood watch">
 <pre>lorem</pre>
 </div>
-<div created="20200205100537053" creator="Aria" modified="20200205110654053" modifier="Aria" tags="quantity" title="Protein volume">
+<div created="20200205100537053" creator="Aria" modified="20200205111148175" modifier="Aria" tags="quantity" title="Protein volume">
 <pre>The volume of a protein is correlated to many of its properties: packing, folding, dynamics. However, defining and computing the volume of a folded protein poses several challenges:
-* The volume of a single atom is not a well-defined quantity since the boundary of an atom is not a well-defined physical entity.
-* Moreover after having defined this quantity, the volume of an atom is very dependant of its environment.
-* Inside the folded structure of a protein, different types of cavities coexists. These cavities can be hard to detect and to avoid counting.
+* The volume of a single atom is not a well-defined quantity since the boundary of an atom is not a well-defined physical entity. Even after a definition has been set, the volume of an atom is very dependant of its environment.
+* The volume of a molecule isn't the sum of the volume of its atoms since by bonding, atoms share a portion of their volume with each other.
+* Inside the folded structure of a protein, different [[types of cavities]] coexists. These cavities can be hard to detect and to avoid counting.
 
-Here we present different ways of computing this quantity.
+Here we present different ways of addressing the computation of this quantity:
+
 </pre>
 </div>
 
