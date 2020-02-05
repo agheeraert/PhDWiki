@@ -141,6 +141,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/config/ColourPicker/Recent</li>
+
 <li>$:/config/RelinkOnRename</li>
 
 <li>$:/ControlPanel</li>
@@ -162,6 +164,8 @@ Error message and password prompt
 <li>$:/SiteTitle</li>
 
 <li>$:/state/image-picker/system--763373212</li>
+
+<li>$:/state/showeditpreview</li>
 
 <li>$:/state/tab-1749438307</li>
 
@@ -193,6 +197,9 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20200205141324369" creator="Aria" list="GhostWhite Black" modified="20200205141326929" modifier="Aria" title="$:/config/ColourPicker/Recent">
+<pre></pre>
+</div>
 <div created="20200205132454245" creator="Aria" modified="20200205132454245" modifier="Aria" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
 </div>
@@ -9419,6 +9426,9 @@ Error message and password prompt
 <div created="20200205132600998" creator="Aria" modified="20200205132605350" modifier="Aria" title="$:/state/image-picker/system--763373212">
 <pre>hide</pre>
 </div>
+<div created="20200205141313097" creator="Aria" modified="20200205141314289" modifier="Aria" title="$:/state/showeditpreview">
+<pre>no</pre>
+</div>
 <div created="20200205094751227" creator="Aria" modified="20200205095410693" modifier="Aria" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
@@ -9431,7 +9441,7 @@ Error message and password prompt
 <div created="20200205094727626" creator="A" modified="20200205094728970" modifier="Ari" title="$:/status/UserName">
 <pre>Aria</pre>
 </div>
-<div created="20200205131627201" creator="Aria" list="[[Protein Volume]] GettingStarted" modified="20200205131627202" modifier="Aria" title="$:/StoryList">
+<div created="20200205131627201" creator="Aria" list="[[Protein Volume]]" modified="20200205131627202" modifier="Aria" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9604,7 +9614,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200205095845945" creator="Aria" modified="20200205140040193" modifier="Aria" tags="quantity" title="Protein Volume" version="">
+<div created="20200205095845945" creator="Aria" modified="20200205141339513" modifier="Aria" tags="quantity" title="Protein Volume" version="">
 <pre>&lt;p&gt; The volume of a protein is correlated to many of its properties: packing, folding, dynamics. However, defining and computing the volume of a folded protein poses several challenges:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt; The volume of a single atom is not a well-defined quantity since the boundary of an atom is not a well-defined physical entity. Even after a definition has been set, the volume of an atom is very dependant of its environment.&lt;/li&gt;
@@ -9613,7 +9623,7 @@ Error message and password prompt
 
 &lt;p&gt;Here we present different ways of addressing the computation of this quantity:&lt;/p&gt;
 
-&lt;h2&gt;Voronoi polyhedras and related mathematical objects&lt;/h2&gt;
+&lt;h2&gt;Voronoi polyhedras and Delaunay tetrahedrons&lt;/h2&gt;
 &lt;p&gt;The Voronoi and Delaunay tessalation was first used by Richards in 1974 to evaluate the volume of atoms in a protein. Given a set of centroid points, the Voronoi tessalation divides space into regions, called Voronoi cells, which are the regions of space comprising points that are closer to the centroid point than any other. Usually these cells are built by constructing the planes bisecting the lines connecting each pair of centroid points and then selecting the smallest polyhedron form by these planes. The Voronoi cells fills the space and thus define a tessalation. The Voronoi diagram is the resulting partition of the space. &lt;/p&gt;
 &lt;p&gt;The Delaunay tessalation is drawn by tracing vertices between each centroid points that share a face of their respective Voronoi cell. The Voronoi and Delaunay tessalations are related since their diagram is the dual of each other. &lt;/p&gt;
 &lt;p&gt; We then define the volume of the protein as the sum of the volume of each Delaunay tetrahedron which is also the volume of the convex hull of our set of points. On Fig. 1, we report the Delaunay volumes of [[IGPS]] from //T. maritima// in the apo state and in the PRFAR-bound state during [[4 MD simulations]] 
@@ -9621,7 +9631,7 @@ Error message and password prompt
 Fig. 1 Delaunay volumes of the structures of apo and prfar along 4 simulations.
 This approach has the big disadvantage to not take into account the cavities present inside a protein. However this measurement is essential to quantify protein packing or some protein dynamics motions.
 &lt;h2&gt;Characteristic distance between connected atoms&lt;/h2&gt;
-Instead of computing the volume of the convex hull of the set of points, which doesn't take into account the particularities of protein packing, an idea is to compute the volume of a concave hull of this set. There is no single definition of what the concave hull of a set is and this measure will require the addition of a new parameter.
+
 </pre>
 </div>
 
