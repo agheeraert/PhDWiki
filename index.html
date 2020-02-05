@@ -9607,16 +9607,16 @@ Error message and password prompt
 <div created="20200205095845945" creator="Aria" modified="20200205100552566" modifier="Aria" tags="quantity" title="Neighborhood watch">
 <pre>lorem</pre>
 </div>
-<div created="20200205100537053" creator="Aria" modified="20200205114251720" modifier="Aria" tags="quantity" title="Protein volume">
+<div created="20200205100537053" creator="Aria" modified="20200205114511143" modifier="Aria" tags="quantity" title="Protein volume">
 <pre>&lt;p&gt; The volume of a protein is correlated to many of its properties: packing, folding, dynamics. However, defining and computing the volume of a folded protein poses several challenges:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt; The volume of a single atom is not a well-defined quantity since the boundary of an atom is not a well-defined physical entity. Even after a definition has been set, the volume of an atom is very dependant of its environment.&lt;/li&gt;
 &lt;li&gt; The volume of a molecule isn't the sum of the volume of its atoms since by bonding, atoms share a portion of their volume with each other.&lt;/li&gt;
-&lt;li&gt;Inside the folded structure of a protein, different [[types of cavities]] coexists. These cavities can be hard to detect and to avoid counting. &lt;/li&gt; 
+&lt;li&gt;Inside the folded structure of a protein, different [[types of cavities]] coexists. These cavities can be hard to detect and to avoid counting. &lt;/li&gt; &lt;/ul&gt;
 
 &lt;p&gt;Here we present different ways of addressing the computation of this quantity:&lt;/p&gt;
 
-!! Delaunay polyhedras
+&lt;h2&gt;Delaunay polyhedras&lt;/h2&gt;
 &lt;p&gt;Given a set of centroid points, the Voronoi tessalation divides space into regions, called Voronoi cells, which are the regions of space comprising points that are closer to the centroid point than any other. Usually these cells are built by constructing the planes bisecting the lines connecting each pair of centroid points and then selecting the smallest polyhedron form by these planes. The Voronoi cells fills the space and thus define a tessalation. The Voronoi diagram is the partition of the space. &lt;/p&gt;
 &lt;p&gt;The Delaunay tessalation is drawn by tracing vertices between each centroid points that share a face of the Voronoi cell. &lt;/p&gt;
 
