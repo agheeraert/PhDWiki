@@ -9632,7 +9632,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200205095845945" creator="Aria" modified="20200206092509069" modifier="Aria" tags="TableOfContents quantity" title="Protein Volume" version="">
+<div created="20200205095845945" creator="Aria" modified="20200206094623286" modifier="Aria" tags="TableOfContents quantity" title="Protein Volume" version="">
 <pre>&lt;p&gt; The volume of a protein is correlated to many of its properties: packing, folding, dynamics. However, defining and computing the volume of a folded protein poses several challenges:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt; The volume of a single atom is not a well-defined quantity since the boundary of an atom is not a well-defined physical entity. Even after a definition has been set, the volume of an atom is very dependant of its environment.&lt;/li&gt;
@@ -9647,9 +9647,9 @@ Error message and password prompt
 &lt;p&gt; We then define the volume of the protein as the sum of the volume of each Delaunay tetrahedron which is also the volume of the convex hull of our set of points. On Fig. 1, we report the Delaunay volumes of [[IGPS]] from //T. maritima// in the apo state and in the PRFAR-bound state during [[4 MD simulations]] 
 [img[images/volumes_delaunay.png]]
 Fig. 1 Delaunay volumes of the structures of apo and prfar along 4 simulations.
-This approach has the big disadvantage to not take into account the cavities present inside a protein. However this measurement is essential to quantify protein packing or some protein dynamics motions.
+This approach has the big disadvantage to not take into account the cavities present inside a protein. However this measure is essential to quantify protein packing or some protein dynamics motions.
 &lt;h2&gt;Characteristic distance between connected atoms&lt;/h2&gt;
-[[Cavities]] inside a protein represents areas of the space far from the atom centers where the electronic density is close to zero. Hence Delaunay tetrahedrons connecting atoms too far from each other to be connected must take into account some void. To quantify &quot;too far from each other&quot; 
+[[Cavities]] inside a protein represents areas of the space far from the atom centers and where the electronic density is close to zero. The Delaunay tetrahedrons fills all the space inside the convex hull of the protein. However, some of these tetrahedrons fills cavities. One way to discriminate cavity tetrahedrons is by size. A Delaunay tetrahedron filling space filled by the protein has smaller dimensions than a Delaunay tetrahedron filling void since it will connect atoms in contact.  
 
 </pre>
 </div>
