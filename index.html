@@ -9824,7 +9824,7 @@ Error message and password prompt
 <div _canonical_uri="images/characteristic_distance.pdf" created="20200212113813451" creator="Aria" modified="20200212113937258" modifier="Aria" tags="" title="Characteristic Distance" type="application/pdf">
 <pre></pre>
 </div>
-<div created="20200205095845945" creator="Aria" modified="20200212145100364" modifier="Aria" tags="TableOfContents quantity" title="Protein Volume" version="">
+<div created="20200205095845945" creator="Aria" modified="20200212151009014" modifier="Aria" tags="TableOfContents quantity" title="Protein Volume" version="">
 <pre>&lt;p&gt; The volume of a protein is correlated to many of its properties: packing, folding, dynamics. However, defining and computing the volume of a folded protein poses several challenges:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt; The volume of a single atom is not a well-defined quantity since the boundary of an atom is not a well-defined physical entity. Even after a definition has been set, the volume of an atom is very dependant of its environment.&lt;/li&gt;
@@ -9846,10 +9846,9 @@ This approach has the big disadvantage to not take into account the cavities pre
 &lt;h3&gt; $$k$$-Nearest Neighbor approach &lt;/h3&gt;
 The $$k$$-Nearest Neighbor ($$k$$-NN) approach has been widely been used to determine concave hulls and characteristic distances of data sets. This approach depends on one parameter: $$k$$. For each centroid point of the dataset, we compute its $$k$$ nearest neighbor and the distance to these neighbors. We can then represent these data in two different ways. On one hand, we plot the distances in function of their order. On an other hand, we plot the distribution of the distances. With this type of tools, when we order all the computed distances, we expect to see two distinctive behaviors appear on the graph: 
 &lt;ul&gt;&lt;li&gt;a linear behavior, corresponding to a uniform distribution around the characteristic distance. This will be the distances representing typical contacts&lt;/li&gt;
-&lt;li&gt; an explosive and diverging behavior. This will be the distances representing atoms that are not in contact.&lt;/lI&gt;
-&lt;p&gt;When plotting the distribution of distances, with expect to see a uniform distribution around the characteristic distance &quot;pulled&quot; to the extremes by distances of atoms not in contact.&lt;/p&gt;
-&lt;p&gt;We can also generalize this work, using different &lt;/p&gt;
-
+&lt;li&gt; an explosive and diverging behavior. These distances represents atoms that are not in contact.&lt;/lI&gt; &lt;/ul&gt;
+&lt;p&gt;When plotting the distribution of distances, with expect to see a uniform distribution around the characteristic distance &quot;pulled&quot; to the extremes by distances of atoms not in contact. 
+&lt;p&gt;This work can be generalized, using distances computed in different contexts, namely the dimensions of Delaunay tetrahedrons&lt;/p&gt;
 [img[images/characteristic_distance.png]]
 </pre>
 </div>
