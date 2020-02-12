@@ -9456,7 +9456,7 @@ Error message and password prompt
 <div created="20200205094727626" creator="A" modified="20200205094728970" modifier="Ari" title="$:/status/UserName">
 <pre>Aria</pre>
 </div>
-<div created="20200205144833847" creator="Aria" list="TableOfContents [[Protein Volume]] GettingStarted $:/ControlPanel" modified="20200205145103600" modifier="Aria" title="$:/StoryList">
+<div created="20200212100959022" creator="Aria" list="TableOfContents [[Protein Volume]]" modified="20200212100959022" modifier="Aria" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9632,7 +9632,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200205095845945" creator="Aria" modified="20200206094623286" modifier="Aria" tags="TableOfContents quantity" title="Protein Volume" version="">
+<div created="20200205095845945" creator="Aria" modified="20200212102343614" modifier="Aria" tags="TableOfContents quantity" title="Protein Volume" version="">
 <pre>&lt;p&gt; The volume of a protein is correlated to many of its properties: packing, folding, dynamics. However, defining and computing the volume of a folded protein poses several challenges:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt; The volume of a single atom is not a well-defined quantity since the boundary of an atom is not a well-defined physical entity. Even after a definition has been set, the volume of an atom is very dependant of its environment.&lt;/li&gt;
@@ -9649,8 +9649,8 @@ Error message and password prompt
 Fig. 1 Delaunay volumes of the structures of apo and prfar along 4 simulations.
 This approach has the big disadvantage to not take into account the cavities present inside a protein. However this measure is essential to quantify protein packing or some protein dynamics motions.
 &lt;h2&gt;Characteristic distance between connected atoms&lt;/h2&gt;
-[[Cavities]] inside a protein represents areas of the space far from the atom centers and where the electronic density is close to zero. The Delaunay tetrahedrons fills all the space inside the convex hull of the protein. However, some of these tetrahedrons fills cavities. One way to discriminate cavity tetrahedrons is by size. A Delaunay tetrahedron filling space filled by the protein has smaller dimensions than a Delaunay tetrahedron filling void since it will connect atoms in contact.  
-
+&lt;p&gt; [[Cavities]] inside a protein represents areas of the space far from the atom centers and where the electronic density is close to zero. The Delaunay tetrahedrons fills all the space inside the convex hull of the protein. However, some of these tetrahedrons must fills cavities. One way to discriminate these tetrahedrons is with the dimensions of the tetrahedron. Indeed, a Delaunay tetrahedron filling space filled by the protein has smaller dimensions than a Delaunay tetrahedron filling void since it will connect atoms in contact instead of distant atoms. &lt;/p&gt;  
+&lt;p&gt; In previous works, we usually defined the contact condition to be around 5&amp;#8491;&lt;/p&gt;
 </pre>
 </div>
 <div caption="Contents" created="20200205144632007" creator="Aria" list-after="$:/core/ui/SideBar/Open" modified="20200205144845039" modifier="Aria" tags="$:/tags/SideBar" title="TableOfContents">
