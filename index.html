@@ -9642,7 +9642,7 @@ Error message and password prompt
 <div created="20200205094727626" creator="A" modified="20200205094728970" modifier="Ari" title="$:/status/UserName">
 <pre>Aria</pre>
 </div>
-<div created="20200212125300729" creator="Aria" list="$:/Import $:/ControlPanel TableOfContents [[Protein Volume]]" modified="20200212125307954" modifier="Aria" title="$:/StoryList">
+<div created="20200212125300729" creator="Aria" list="$:/Import $:/ControlPanel TableOfContents [[Protein Volume]]" modified="20200212162103129" modifier="Aria" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200212125051558" creator="Aria" modified="20200212125051558" modifier="Aria" title="$:/temp/HidePluginWarning">
@@ -9824,7 +9824,7 @@ Error message and password prompt
 <div _canonical_uri="images/characteristic_distance.pdf" created="20200212113813451" creator="Aria" modified="20200212113937258" modifier="Aria" tags="" title="Characteristic Distance" type="application/pdf">
 <pre></pre>
 </div>
-<div created="20200205095845945" creator="Aria" modified="20200212162005881" modifier="Aria" tags="TableOfContents quantity" title="Protein Volume" version="">
+<div created="20200205095845945" creator="Aria" modified="20200212162950422" modifier="Aria" tags="TableOfContents quantity" title="Protein Volume" version="">
 <pre>&lt;p&gt; The volume of a protein is correlated to many of its properties: packing, folding, dynamics. However, defining and computing the volume of a folded protein poses several challenges:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt; The volume of a single atom is not a well-defined quantity since the boundary of an atom is not a well-defined physical entity. Even after a definition has been set, the volume of an atom is very dependant of its environment.&lt;/li&gt;
@@ -9851,8 +9851,9 @@ The $$k$$-Nearest Neighbor ($$k$$-NN) approach has been widely been used to dete
 &lt;p&gt;This work can be generalized, using distances computed in different contexts, namely the dimensions of Delaunay tetrahedrons. On Fig. 2 we see the order and distribution of distances with 4 sets of distances: $$k$$-NN for $$k = 3,4,5$$ and Delaunay tetrahedrons of one frame coming from the [[4 MD simulations]]. The $$k$$-NN plots are similar to one another. Instead of having one uniform distribution of characteristic distances, we see four uniform distributions centered around 100 pm, 150 pm, 180 pm and 210 pm. The chemical interpretation of this phenomenon is that we actually see four different peaks representing different kind of bond length. These four characteristic distances represents respectively covalent bonds with an hydrogen atom, other type of covalent bonds, hydrogen bonds and van der Waals bonds. However, defining our contact condition with a characteristic distance relating to bond lengths poses an issue: the tetrahedrons will automatically be discarded if the 4 atoms aren't all bonded together. Our definition of contact must be allow more flexibility.&lt;/p&gt;
 [img[images/characteristic_distance.png]]
 Fig. 2. $$k$$-NN ($$k$$=3 (//upper left//),  4 (//upper right//), 5 (//bottom left//) and Delaunay tetrahedron distances order plot (//left of each panel//) and distance distribution (//right of each panel//).
-&lt;p&gt; The Delaunay tetrahedron edge length plot however, shows a single uniform distribution centered around 300pm and ranging from around 100pm to 500pm. This is more in accordance to the previous definition of contact usually below 5 &amp;#8491. In the following of the study it using these distances that we will define the contact condition.&lt;/p&gt;
-&lt;h3&gt;
+&lt;p&gt; The Delaunay tetrahedron edge length plot however, shows a single uniform distribution centered around 300pm and ranging from around 100pm to 500pm. This is more in accordance to the previous definition of contact usually below 5 &amp;#8491;. In the following of the study it using these distances that we will define the contact condition.&lt;/p&gt;
+&lt;h3&gt;Maximum range of the distribution&lt;/h3&gt;
+The results plotted on Fig. 2 are only considering a single frame of the [[4 MD simulations]]. However this characteristic distance measure may vary during simulations. In order to avoid discarding tetrahedrons that would be considered characteristic in their frame but not in another reference, we will define the characteristic distance to be the maximum one found during all the different simulations. 
 
 </pre>
 </div>
