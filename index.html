@@ -9458,7 +9458,7 @@ Error message and password prompt
 <div created="20200205094727626" creator="A" modified="20200205094728970" modifier="Ari" title="$:/status/UserName">
 <pre>Aria</pre>
 </div>
-<div created="20200212100959022" creator="Aria" list="[[Characteristic Distance]] TableOfContents [[Protein Volume]]" modified="20200212100959022" modifier="Aria" title="$:/StoryList">
+<div created="20200212114414038" creator="Aria" list="TableOfContents [[Protein Volume]]" modified="20200212114414038" modifier="Aria" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9635,10 +9635,9 @@ Error message and password prompt
 }</pre>
 </div>
 <div _canonical_uri="images/characteristic_distance.pdf" created="20200212113813451" creator="Aria" modified="20200212113937258" modifier="Aria" tags="" title="Characteristic Distance" type="application/pdf">
-<pre>
-</pre>
+<pre></pre>
 </div>
-<div created="20200205095845945" creator="Aria" modified="20200212114158099" modifier="Aria" tags="TableOfContents quantity" title="Protein Volume" version="">
+<div created="20200205095845945" creator="Aria" modified="20200212115552044" modifier="Aria" tags="TableOfContents quantity" title="Protein Volume" version="">
 <pre>&lt;p&gt; The volume of a protein is correlated to many of its properties: packing, folding, dynamics. However, defining and computing the volume of a folded protein poses several challenges:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt; The volume of a single atom is not a well-defined quantity since the boundary of an atom is not a well-defined physical entity. Even after a definition has been set, the volume of an atom is very dependant of its environment.&lt;/li&gt;
@@ -9658,6 +9657,7 @@ This approach has the big disadvantage to not take into account the cavities pre
 &lt;p&gt; [[Cavities]] inside a protein represents areas of the space far from the atom centers and where the electronic density is close to zero. The Delaunay tetrahedrons fills all the space inside the convex hull of the protein. However, some of these tetrahedrons must fills cavities. One way to discriminate these tetrahedrons is with the dimensions of the tetrahedron. Indeed, a Delaunay tetrahedron filling space filled by the protein has smaller dimensions than a Delaunay tetrahedron filling void since it will connect atoms in contact instead of distant atoms. &lt;/p&gt;  
 &lt;p&gt; In previous works, we usually defined the contact condition to be around 5&amp;#8491; using physico-chemical arguments. In this work, the contact condition that we want to define, though analogous to the previous one, is directly related to the characteristic length of our set of centroid points. Atoms will be considered in contact if they are separated by a distance lower than the characteristic distance and thereby tetrahedrons will only be considered to be actual elements of the protein volume if all its edges are below this same characteristic distance.&lt;/p&gt;
 &lt;h3&gt; k-Nearest Neighbor approach &lt;/h3&gt;
+The k-Nearest Neighbor (kNN) approach has been widely been used to determine concave hulls. Unlike the convex hull, a concave hull is not unique to a data set and in this approach depends only on one parameter $k$
 &lt;p&gt;&lt;/p&gt;
 [img[images/characteristic_distance.png]]
 </pre>
